@@ -75,18 +75,15 @@
     <title>Minion Hub</title>
     <script>
         window.onload = function() {
-            // Display the age verification modal when the page loads
             document.getElementById('ageModal').style.display = "block";
         };
 
-        // If the user clicks "Yes", allow access to the page
         function acceptAge() {
-            document.getElementById('ageModal').style.display = "none"; // Close the modal
+            document.getElementById('ageModal').style.display = "none";
         }
 
-        // If the user clicks "No", redirect them to another page (for example, Google)
         function rejectAge() {
-            window.location.href = "https://www.google.com"; // Redirect to Google (or another page)
+            window.location.href = "https://www.google.com";
         }
     </script>
     <div id="ageModal" class="modal">
